@@ -1,0 +1,8 @@
+{
+  "name": "RESQFLOW - Emergency Priority System",
+  "description": "Critical infrastructure portal for emergency vehicle status management and priority signal control.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESQFLOW | Emergency Vehicle Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Michroma&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0f172a;
+        font-family: 'Inter', sans-serif;
+        color: #f8fafc;
+      }
+      .font-tech { font-family: 'Michroma', sans-serif; }
+      .glass {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .emergency-glow {
+        box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+      }
+      .pulse {
+        animation: pulse-animation 2s infinite;
+      }
+      @keyframes pulse-animation {
+        0% { box-shadow: 0 0 0 0px rgba(239, 68, 68, 0.4); }
+        100% { box-shadow: 0 0 0 20px rgba(239, 68, 68, 0); }
+      }
+      .hide { display: none !important; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "three": "https://esm.sh/three@^0.182.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Firebase SDKs are imported in index.tsx via esm.sh -->
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
